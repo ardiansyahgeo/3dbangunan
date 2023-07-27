@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset ="UTF-8" />
+<meta http-equiv="X-UA-Compatible"
+content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GEO BIM</title>
+<link rel="stylesheet" href="style.css" />
+
 <style>
 body {
   margin: 0;
@@ -35,28 +41,70 @@ body {
 </head>
 <body>
 
+
+
 <div class="topnav">
-  <a class="active" href="basmol/index.html">Kampung Basmol</a>
-  <a href="beting remaja/index.html">Kampung Beting Remaja</a>
-  <a href="kembang lestari/index.html">Kampung Kembang Lestari</a>
-  <a href="kota intan/index.html">Kampung Kota Intan</a>
-  <a href="pasar lama/index.html">Kampung Pasar Lama</a>
-  <a href="pesing garden/index.html">Kampung Pesing Garden</a>
-   <a href="salo/index.html">Kampung Salo</a>
-    <a href="taman kota/index.html">Kampung Taman Kota</a>
+  <a class="active" href="basmol/index.html">3D Kampung Basmol</a>
+  <a href="beting remaja/index.html">3D Kampung Beting Remaja</a>
+  <a href="kembang lestari/index.html">3D Kampung Kembang Lestari</a>
+  <a href="kota intan/index.html">3D Kampung Kota Intan</a>
+  <a href="pasar lama/index.html">3D Kampung Pasar Lama</a>
+  <a href="pesing garden/index.html">3D Kampung Pesing Garden</a>
+   <a href="salo/index.html">3D Kampung Salo</a>
+    <a href="taman kota/index.html">3D Kampung Taman Kota</a>
 </div>
 
 <div style="padding-left:16px">
-  <h2>TAMPILAN 3D BANGUNAN</h2>
-  <p></p>
-  <img id="myImg" src="IMAGE/img_snow.jpg" alt="Snow" style="width:300%;max-width:900px">
-
+ 
+    <h1>MODEL 3D BANGUNAN HASIL INVENTARISASI PERTANAHAN</h1>
+        <hr />
+        <p>
+           Building Information Modeling (BIM) adalah salah satu teknologi di bidang AEC (Arsitektur, Engineering dan Construction) yang mampu men-simulasikan seluruh informasi di dalam proyek pembangunan ke dalam model 3 dimensi. 
+		   Pada pengaplikasiannya, BIM memang digunakan pada bidang konstruksi dimana teknologi ini dapat mampu menghemat waktu pengerjaan, biaya yang dikeluarkan serta tenaga kerja yang dibutuhkan.
+		   Namun seiring perkembangan waktu, BIM telah diintegrasikan kedalam Sistem Informasi Geografis (SIG) untuk meningkatkan visualisasi data spasial dengan mentransformasikan data dari 2 dimensi kedalam data 3 dimensi. 
+		   Dengan visualisasi 3 dimensi ini maka peta bangunan dapat menjadi lebih informatif dan interaktif. </p>
+		   
+  <p> Dalam kegiatan inventarisasi pertanahan ini, objek yang dikaji adalah kampung yang memiliki kepadatan bangunan yang tinggi. 
+  Apabila bangunan padat di kampung disajikan dalam bentuk 2 dimensi, maka tipologi bentuk kampung menjadi kurang terlihat. 
+  Bentuk bangunan serta elevasi bangunan dapat terlihat jelas apabila disajikan dalam bentuk 3 dimensi. 
+  Selain meningkatkan di sisi visualisasi, BIM ini juga menyimpan informasi atribut didalamnya. 
+  User dapat meng-klik setiap bangunannya untuk mendapatkan seluruh informasi berkaitan dengan hasil inventarisasi lahan dan bangunan tersebut. </p>
+  
+  <div class="wrapper">
+  <div class="slides">
+  <span id="slide-1"></span>
+  <span id="slide-2"></span>
+  <span id="slide-3"></span>
+  <span id="slide-4"></span>
+  <span id="slide-5"></span>
+  
+  <div class="images">
+  <img  src="IMAGE/img_snow.jpg"  style="width:300%;max-width:800px"/>
+  <img src="IMAGE/img_snow4.jpg"  style="width:300%;max-width:800px"/>
+  <img  src="IMAGE/img_snow2.jpg"  style="width:300%;max-width:800px"/>
+  <img  src="IMAGE/img_snow3.jpg"  style="width:300%;max-width:800px"/>
+  <img  src="IMAGE/img_snow4.jpg" style="width:300%;max-width:800px"/>
+</div>
+  </div>
+  
+  
+<!--navigasi-->
+<div class="navigation">
+<a href="#slide-1">1</a>
+<a href="#slide-2">2</a>
+<a href="#slide-3">3</a>
+<a href="#slide-4">4</a>
+<a href="#slide-5">5</a>
+  </div>
+  
 <!-- The Modal -->
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
   <img class="modal-content" id="img01">
   <div id="caption"></div>
 </div>
+
+
 
 <script>
 // Get the modal
